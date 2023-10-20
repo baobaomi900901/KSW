@@ -1,0 +1,72 @@
+{
+  "id": "4287300",
+  "name": "RPA_2.0",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "37686538",
+      "name": "菜单栏-页签-关闭",
+      "font_class": "caidanlan-yeqian-guanbi",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "37686547",
+      "name": "状态栏-搜索",
+      "font_class": "zhuangtailan-sousuo",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "37686491",
+      "name": "菜单栏-编辑",
+      "font_class": "caidanlan-bianji",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "37683997",
+      "name": "状态栏-收藏",
+      "font_class": "zhuangtailan-shoucang",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "37683996",
+      "name": "状态栏-全局操作",
+      "font_class": "zhuangtailan-quanjucaozuo",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "37683999",
+      "name": "状态栏-问题",
+      "font_class": "zhuangtailan-wenti",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "37684000",
+      "name": "状态栏-箭头",
+      "font_class": "zhuangtailan-jiantou",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "37683995",
+      "name": "状态栏-帮助中心",
+      "font_class": "zhuangtailan-bangzhuzhongxin",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "37683998",
+      "name": "状态栏-消息",
+      "font_class": "zhuangtailan-xiaoxi",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    }
+  ]
+}
