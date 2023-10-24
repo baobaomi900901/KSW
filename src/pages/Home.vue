@@ -7,7 +7,7 @@
 !-->
 <template>
   <div id="Home" class="Home h-full px-4 pt-4 flex bg-gray-50">
-    <KCard class="w-1/3">
+    <KCard class="w-1/3 shadow-base">
       <template #header>
         <div>
           <div class="text font-bold mb-1">需求总开发进度</div>

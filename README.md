@@ -12,10 +12,22 @@ npm i
 
 ### 运行
 
+storybook
+
 ```shell
 yarn storybook
 // or
 npm run storybook
+
+```
+
+dev
+
+```shell
+yarn dev
+// or
+npm run dev
+
 ```
 
 ### 初始化组件目录

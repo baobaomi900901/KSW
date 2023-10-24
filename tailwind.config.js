@@ -1,6 +1,5 @@
 module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     minWidth: {
       1: "1rem",
@@ -16,38 +15,38 @@ module.exports = {
       2.5: "2.5rem",
       3: "3rem",
     },
-    boxShadow: {
-      "radio-checked": `
-      0 0 0 4px rgba(59, 130, 246, 1) inset,0 0 0 12px rgba(59, 130, 246, 0.5) inset
-      `,
-    },
     extend: {
-      backgroundImage: {
-        checkedmask: `
-          linear-gradient(-45deg, transparent 65%, var(--chkbg) 0), 
-          linear-gradient(45deg, transparent 75%, var(--chkbg) 0), 
-          linear-gradient(-45deg, var(--chkbg) 40%, transparent 0), 
-          linear-gradient(45deg, var(--chkbg) 30%, var(--chkfg) 0, var(--chkfg) 40%, transparent 0), 
-          linear-gradient(-45deg, var(--chkfg) 50%, var(--chkbg) 0)
-          `,
-      },
       colors: {
-        gold: {
-          50: "#fefdf9",
-          100: "#fefaf4",
-          200: "#fcf3e2",
-          300: "#faebd1",
-          400: "#f6dcaf",
-          500: "#F2CD8C",
-          600: "#dab97e",
-          700: "#b69a69",
-          800: "#917b54",
-          900: "#776445",
+        theme: {
+          default: "#2882FF",
+          light: "#FFFFFF",
         },
-        mygray: {
-          1: "#F6F6F6",
+        normal: "#38363C",
+        gray: {
+          25: "#FAFAFA",
+          50: "#F5F5F5",
+          100: "#EAE8EB",
+          200: "#CDCACF",
+          300: "#AFABB3",
+          400: "#736F78",
+          500: "#38363C",
+          600: "#312D38",
+          700: "#312D38",
+          800: "#181324",
+          900: "#0F0B1C",
+          950: "#080512",
         },
+        status: {
+          primary: "#2882FF",
+          success: "#22C55E",
+          warning: "#F97316",
+          danger: "#EF4444",
+          info: "#6B7280",
+          captured: "#FAC814",
+        }
+
       },
+      // 自定义间距, 作用于 padding, margin, width, height, top, bottom, left, right
       spacing: {
         px: "1px",
         30: "7.5rem",
@@ -57,32 +56,15 @@ module.exports = {
         100: "25rem",
         pager: "78rem",
       },
-      animation: {
-        "bt-pop": "pop 0.25s ease-out",
-        "radio-checked": "radiomark 0.2s ease-in-out",
-      },
-      keyframes: {
-        pop: {
-          "0%": { transform: "scale(0.95)" },
-          "40%": { transform: "scale(1.02)" },
-          "100%": { transform: "scale(1)" },
-        },
-        radiomark: {
-          "0%": { boxShadow: "0 0 0 12px #F2CD8C inset" },
-          "50%": { boxShadow: "0 0 0 3px #F2CD8C inset" },
-          "100%": { boxShadow: "0 0 0 4px #F2CD8C inset" },
-        },
+      // 阴影
+      boxShadow: {
+        "base": "0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.16)",
+        "input-active": "0 0 0 0.25rem rgba(40, 130, 255, 0.2)",
       },
     },
   },
   variants: {
     extend: {
-      extend: {
-        backgroundColor: ["checked"],
-        backgroundImage: ["checked"],
-        borderColor: ["checked"],
-        animation: ["checked"],
-      },
     },
   },
   plugins: [

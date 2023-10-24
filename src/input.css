@@ -13,14 +13,14 @@
 @font-face {
   font-family: "MyFontLight";
   /*定义字体名称*/
-  src: url("./assets/font/AlibabaPuHuiTi-3-55-Light.woff") format("woff");
+  src: url("./assets/font/AlibabaPuHuiTi-3-45-Light.woff") format("woff");
   /*字体文件地址及格式*/
   font-weight: 300;
 }
 @font-face {
   font-family: "MyFontBold";
   /*定义字体名称*/
-  src: url("./assets/font/AlibabaPuHuiTi-3-55-Bold.woff") format("woff");
+  src: url("./assets/font/AlibabaPuHuiTi-3-85-Bold.woff") format("woff");
   /*字体文件地址及格式*/
   font-weight: 700;
 }
