@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app scrollbar-hide">
+      <!-- 左侧菜单 -->
+      <div class="left-menu scrollbar-hide">
+        <div class="menu-item">菜单1</div>
+        <div class="menu-item">菜单2</div>
+        <div class="menu-item">菜单3</div>
+        <div class="menu-item">菜单4</div>
+        <div class="menu-item">菜单5</div>
+        <div class="menu-item">菜单1</div>
+        <div class="menu-item">菜单2</div>
+        <div class="menu-item">菜单3</div>
+        <div class="menu-item">菜单4</div>
+        <div class="menu-item">菜单5</div>
+        <div class="menu-item">菜单1</div>
+        <div class="menu-item">菜单2</div>
+        <div class="menu-item">菜单3</div>
+        <div class="menu-item">菜单4</div>
+        <div class="menu-item">菜单5</div>
+      </div>
+      <!-- 右侧内容 -->
+      <div class="right-content">
+        <div class="content-item">内容1</div>
+        <div class="content-item">内容2</div>
+        <div class="content-item">内容3</div>
+        <div class="content-item">内容4</div>
+        <div class="content-item">内容5</div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .app {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .left-menu {
+    width: 240px;
+    background-color: #ccc;
+    overflow: auto;
+  }
+  .left-menu .menu-item {
+    height: 68px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+  .right-content {
+    flex: 1;
+    background-color: #fff;
+    overflow: auto;
+  }
+  .right-content .content-item {
+    height: 240px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+</style>

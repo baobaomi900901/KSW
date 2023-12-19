@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script type="module">
+  // 引入 工具
+  import {
+    tools_SearchGoods,
+    tools_SearchGoods_plus,
+  } from "./tools_SearchGoods/index.js";
+
+  let tsg = new tools_SearchGoods();
+  let tsgp = new tools_SearchGoods_plus();
+
+  // 参数
+  let price = { 圆珠笔: 100, 铅笔: 200, 橡皮: 300 };
+  let price2 = [1, 2, 3];
+  let total = sum(price);
+  let bbm = 123;
+
+  // 变量
+  const tb = "https://www.taobao.com";
+  const jd = "https://www.jd.com";
+
+  // fn 计算总价
+  function sum(params) {
+    let res = 0;
+    // 判断, 如果 params 是数组
+    if (Array.isArray(params)) {
+      for (let i = 0; i < params.length; i++) {
+        res += params[i];
+      }
+      return res;
+    } else if (params instanceof Object) {
+      Object.values(params).map((item) => {
+        res += item;
+      });
+      return res;
+    }
+  }
+
+  // fn 打开网页
+  function openWeb(params) {
+    window.open(params, "_blank");
+  }
+
+  // 函数体
+  function run(obj, symbol, standard, fn, fn_p1, fn_p2) {
+    let j = new Function("a", "symbol", "b", `return a ${symbol} b`);
+    console.log(fn);
+    if (j(obj, symbol, standard)) {
+      fn(fn_p1);
+      return;
+    } else {
+      fn(fn_p2);
+      return;
+    }
+  }
+
+  cons;
+  // 执行
+  // run(99, ">=", 100, openWeb, jd, tb);
+</script>
+<style>
+  body {
+    /* 矩形 57 */
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+
+    background: radial-gradient(
+        40px 40px at 50% 100px,
+        #396b8b 0%,
+        rgba(57, 107, 139, 0) 100%
+      ),
+      #353853;
+  }
+</style>

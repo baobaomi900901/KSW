@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="body flex flex-col">
-    <!-- <KStatusBar />
-    <KMenuBar /> -->
+    <KStatusBar />
+    <KMenuBar />
     <router-view />
   </div>
 </template>
